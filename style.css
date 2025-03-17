@@ -8,7 +8,7 @@
     --color-white: #FFFFFF;
 }
 
-/* Estilos generales */
+/* Estilo general */
 * {
     margin: 0;
     padding: 0;
@@ -160,3 +160,101 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/* ---- MEDIA QUERIES PARA SER RESPONSIVO ---- */
+
+/* Para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+    .header-banner {
+        flex: 30%; /* Reduce el tamaño del banner */
+        padding: 20px 0;
+    }
+
+    .input-section {
+        flex: 70%;
+        border-radius: 32px 32px 0 0; /* Redondeo más suave */
+        padding: 15px;
+    }
+
+    .main-title {
+        font-size: 36px; /* Tamaño de fuente más pequeño */
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .input-wrapper {
+        max-width: 400px; /* Menor tamaño máximo */
+    }
+
+    .input-name {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px;
+    }
+
+    .button-container {
+        width: 100%; /* Que ocupe todo el ancho disponible */
+    }
+
+    .input-title {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .button-draw {
+        padding: 10px 20px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    .result-list {
+        font-size: 20px; /* Ajusta el tamaño para pantallas pequeñas */
+    }
+}
+
+/* Para pantallas aún más pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+    .header-banner {
+        flex: 20%; /* Reducir aún más el tamaño */
+    }
+
+    .input-section {
+        flex: 80%;
+    }
+
+    .main-title {
+        font-size: 30px; /* Fuente aún más pequeña */
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .input-wrapper {
+        max-width: 300px; /* Ajustar el ancho máximo */
+    }
+
+    .input-name {
+        font-size: 12px; /* Tamaño de fuente aún más pequeño */
+        padding: 6px;
+    }
+
+    button {
+        padding: 10px 20px; /* Reduce el tamaño del botón */
+        font-size: 12px;
+    }
+
+    .button-draw {
+        padding: 8px 15px;
+    }
+
+    .result-list {
+        font-size: 18px; /* Ajuste final para móviles pequeños */
+    }
+}
+
+
+   
